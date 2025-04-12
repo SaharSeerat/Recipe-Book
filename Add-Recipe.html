@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Recipe</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="add-recipe.html">Add Recipe</a>
+            <a href="recipe-list.html">Recipe List</a>
+        </nav>
+    </header>
+
+    <h2>Add Your Recipe</h2>
+    <form action="#" method="post">
+        <label>Recipe Name: <input type="text" name="recipe-name" required></label><br>
+        <label>Ingredients:<br><textarea name="ingredients" rows="5" cols="30" required></textarea></label><br>
+        <label>Cooking Instructions:<br><textarea name="instructions" rows="5" cols="30" required></textarea></label><br>
+        <label>Image URL: <input type="url" name="image-url"></label><br>
+        <label>Recipe Category:
+            <select name="category" required>
+                <option value="Desserts">Desserts</option>
+                <option value="Appetizers">Appetizers</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Main Course">Main Course</option>
+            </select>
+        </label><br>
+        <button type="submit">Add Recipe</button>
+    </form>
+</body>
+</html>
